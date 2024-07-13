@@ -6,11 +6,11 @@ import random
 2 for scissor
 
 '''
-computer=random.choice([0,1,2])
-mein = input("Enter ur choice:")
+computer=random.choice([0,1,2]) #used a "random" operator here which we have  imported at line 1
+mein = input("Enter ur choice:") 
 medic = { "r":0 , "p":1 , "s":2}
 reversedict={ 0:"rock", 1:"paper" , 2:"scissor"}
-
+#created another dict to display the choice 
 me=medic[mein]
 
 print(f"you chose:{reversedict[me]}\ncomputer have chose:{reversedict[computer]}")
@@ -33,5 +33,5 @@ else:
         print("u lost")
     else:
         print("something is wrong")
-
+# we can make the code smaller but this is most understandable way 😅
 
